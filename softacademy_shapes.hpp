@@ -16,7 +16,7 @@ public:
 
 class Circle final : public Shape {
 public:
-    explicit Circle(double radius);
+    explicit Circle(double radius); v
 
     double radius() const noexcept;
 
