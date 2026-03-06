@@ -74,7 +74,7 @@ public:
         if (!tail_) {
             throw std::out_of_range("LinkedList::back() on empty list");
         }
-        return tail_->value; v
+        return tail_->value;
     }
 
     void clear() noexcept {
