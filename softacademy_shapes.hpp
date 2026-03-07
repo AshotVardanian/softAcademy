@@ -65,6 +65,9 @@ public:
             m_b = b;
             m_c = c;
         }
+        else {
+            throw std::invalid_argument("Invalid triangle sides");
+        }
     }
 
     double a() const noexcept {
@@ -80,7 +83,7 @@ public:
         return m_a + m_b + m_c;
     }
     double area() const override {
-        return sqrt(p/2 * (p/2 - m_a) * (p / 2 - m_b) * (p / 2 - m_c))
+        return sqrt(perimeter()/2 * (perimeter() /2 - m_a) * (perimeter() / 2 - m_b) * (perimeter() / 2 - m_c))
     }
 
 private:
