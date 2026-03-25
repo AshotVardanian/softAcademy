@@ -18,7 +18,6 @@ public:
 class Circle final : public Shape {
 public:
     explicit Circle(double radius): m_radius(radius){}
-
     double radius() const noexcept {
         return m_radius;
     }
