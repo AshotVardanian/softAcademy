@@ -82,7 +82,7 @@ public:
         return m_a + m_b + m_c;
     }
     double area() const override {
-        return sqrt(perimeter()/2 * (perimeter() /2 - m_a) * (perimeter() / 2 - m_b) * (perimeter() / 2 - m_c))
+        return sqrt(perimeter() / 2 * (perimeter() / 2 - m_a) * (perimeter() / 2 - m_b) * (perimeter() / 2 - m_c));
     }
 
 private:

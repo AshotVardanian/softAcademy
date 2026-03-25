@@ -16,7 +16,7 @@ private:
         Node* next;
 
         Node(const T& v, Node* p = nullptr, Node* n = nullptr): value(v), prev(p), next(n){}
-        Node(T&& v, Node* p = nullptr, Node* n = nullptr) : value(v), prev(p), next(n) {}
+        Node(T&& v, Node* p = nullptr, Node* n = nullptr) : value(std::move(v)), prev(p), next(n) {}
     };
 
 public:
